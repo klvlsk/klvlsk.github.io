@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <title>Форма HTML</title>
+  </head>
+
+  <body>
+    <h1>Список ссылок</h1>
+
+    <ol>
+      <li>
+        <a href="http://www.kubsu.ru/index.php">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/index.php">Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https</a>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/index.php"><img src="C:\Users\Olesya\Desktop\WEB\задание 1\image.jpg" width="200" height="200" /></a>
+      </li>
+      <li>
+        <a href="/ru/timetable">Сокращенная ссылка на внутреннюю страницу</a>
+      </li>
+      <li>
+        <a href="/">Сокращенная ссылка на главную страницу</a>
+      </li>
+      <li>
+        <a href="#section-1">Ссылка на фрагмент текущей страницы - Форму HTML</a>
+      </li>
+      <li>
+        <a href="https://infoneeds.kubsu.ru/infoneeds/guests/courses.jsp?type=spb&cid=5779004&term=3#5779500x">Ссылка с тремя параметрами в URL</a>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/ru/user?id63527">Ссылка с параметром id в URL</a>
+      </li>
+      <li>
+        <a href="./form.html">Относительная ссылка на страницу в текущем каталоге</a>
+      </li>
+      <li>
+        <a href="./about">Относительная ссылка на страницу в каталоге about</a>
+      </li>
+      <li>
+        <a href="../above.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a>
+      </li>
+      <li>
+        <a href="../../above.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a>
+      </li>
+      <li>
+        <p><a href="https://www.kubsu.ru/index.php">Эта ссылка</a> ведет на сайт kubsu.ru</p>
+      </li>
+      <li>
+        <a href="https://ru.wikipedia.org/wiki/#:~:text=Добро%20пожаловать%20в%20Википедию">Ссылка на фрагмент страницы стороннего сайта</a>
+      </li>
+      <li>
+        <img src="C:\Users\Olesya\Desktop\WEB\задание 1\image.jpg" width="200" height="200" alt="second_image" usemap="#marksmap">
+        <map name = "marksmap">
+          <area shape="rect" coords="0,0,200,100" href="https://ru.wikipedia.org/wiki/" alt="Прямоугольная область">
+          <area shape="circle" coords="100,150,50" href="https://www.kubsu.ru/index.php" alt="Круглая область">
+        </map>
+      </li>
+      <li>
+        <a href="">Ссылка с пустым href</a>
+      </li>
+      <li>
+        <a>Ссылка без href</a>
+      </li>
+      <li>
+        <a href="https://www.kubsu.ru/user" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+      </li>
+      <li>
+        <a href="./about">Ссылка запрещенная для индексации поисковиками</a>
+      </li>
+      <li>
+        <ol>
+          <li>
+            <a href="https://www.kubsu.ru/index.php" title="kubsu.ru website">Сайт КубГУ</a>
+          </li>
+          <li>
+            <a href="https://www.kubsu.ru/user" title="kubsu.ru user account">Личный кабинет на сайте КубГУ</a>
+          </li>
+          <li>
+            <a href="https://ru.wikipedia.org/wiki/" title="wikipedia main page">Википедия</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="ftp://user:password@example.com">Ссылка на файл на сервере FTP с авторизацией</a>
+      </li>
+    </ol>
+
+    <section id="section-1">
+      <h1>Форма HTML</h1>
+    </section>
+    
+    <form action="/"
+      method="POST">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1"
+        type="name"
+        placeholder="Введите ваше ФИО" />
+      </label><br />
+
+      <label>
+        Телефон:<br />
+        <input name="field-number"
+          type="tel"
+          placeholder="Введите ваш номер телефона" />
+      </label><br />
+
+      <label>
+        Email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="XXXX-XX-XX"
+          type="date" />
+      </label><br />
+
+      <label>
+        Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        женский</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        мужской</label><br />
+      </label>
+
+      <label>
+        Любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2">C</option>
+          <option value="Значение3">C++</option>
+          <option value="Значение4">JavaScript</option>
+          <option value="Значение5">PHP</option>
+          <option value="Значение6">Python</option>
+          <option value="Значение7">Java</option>
+          <option value="Значение8">Haskel</option>
+          <option value="Значение9">Clojure</option>
+          <option value="Значение10">Prolog</option>
+          <option value="Значение11">Scala</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+
+      <label>
+        <input type="checkbox" checked="checked"
+        name="check-1" />
+        С контрактом ознакомлен(а)
+      </label><br />
+
+      <label>
+      <input type="submit" value="Сохранить" />
+      </label>
+
+    </form>
+
+  </body>
+
+</html>
