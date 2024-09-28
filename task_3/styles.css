@@ -130,11 +130,11 @@ footer {
     flex-direction: row;
   }
 
-  #links {
+/*   #links {
     order: 1;
   }
 
   #table {
     order: 2;
-  }
+  } */
 }
