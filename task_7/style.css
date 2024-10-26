@@ -1,0 +1,19 @@
+.responsive {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.responsive div {
+    display: flex;
+    justify-content: center;
+}
+
+.responsive div img {
+    max-height: 800px;
+    width: 98%;
+}
+
+body{
+    background-color: #48c8ff;
+}
