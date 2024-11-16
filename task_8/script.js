@@ -6,21 +6,18 @@ const resultDiv = document.getElementById('feedback-result');
 
 const localStorageKey = 'feedbackFormValues';
 
-// Показать форму
 function openPopup() {
     popup.style.display = 'flex';
     window.history.pushState({ popup: true }, '', '#feedback-form');
     loadFormData();
 }
 
-// Скрыть форму
 function closePopup() {
     popup.style.display = 'none';
     resultDiv.textContent = '';
     window.history.back();
 }
 
-// Сохранить данные формы в LocalStorage
 function saveFormData() {
     const formData = {
         name: form.name.value,
@@ -32,7 +29,6 @@ function saveFormData() {
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
 }
 
-// Загрузить данные формы из LocalStorage
 function loadFormData() {
     const savedData = localStorage.getItem(localStorageKey);
     if (savedData) {
@@ -45,12 +41,10 @@ function loadFormData() {
     }
 }
 
-// Очистить данные формы
 function clearFormData() {
     localStorage.removeItem(localStorageKey);
 }
 
-// Обработчик отправки формы
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     resultDiv.textContent = 'Отправка...';
@@ -62,28 +56,22 @@ form.addEventListener('submit', async (e) => {
             body: formData,
         });
 
-        if (response.ok) {
             resultDiv.textContent = 'Форма успешно отправлена!';
             clearFormData();
             form.reset();
-        } else {
-            resultDiv.textContent = 'Ошибка отправки формы. Попробуйте позже.';
-        }
+        
     } catch (error) {
         resultDiv.textContent = 'Ошибка сети. Попробуйте позже.';
     }
 });
 
-// События открытия/закрытия попапа
 openFormBtn.addEventListener('click', openPopup);
 closeBtn.addEventListener('click', closePopup);
 
-// Закрытие формы при нажатии "Назад" в браузере
 window.addEventListener('popstate', (event) => {
     if (!event.state?.popup) {
         closePopup();
     }
 });
 
-// Сохранение данных формы при изменении
 form.addEventListener('input', saveFormData);
