@@ -62,10 +62,13 @@ form.addEventListener('submit', async (e) => {
             body: formData,
         });
 
+        if (response.ok) {
             resultDiv.textContent = 'Форма успешно отправлена!';
             clearFormData();
             form.reset();
-        
+        } else {
+            resultDiv.textContent = 'Ошибка отправки формы. Попробуйте позже.';
+        }
     } catch (error) {
         resultDiv.textContent = 'Ошибка сети. Попробуйте позже.';
     }
