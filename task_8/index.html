@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="open-form-btn">Открыть форму обратной связи</button>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <button class="close-btn">&times;</button>
+            <h2>Форма обратной связи</h2>
+            <form id="feedback-form" method="POST" enctype="multipart/form-data">
+                <label>
+                    ФИО:
+                    <input type="text" name="name" id="name" required>
+                </label>
+                <label>
+                    Email:
+                    <input type="email" name="email" id="email" required>
+                </label>
+                <label>
+                    Телефон:
+                    <input type="tel" name="phone" id="phone" required>
+                </label>
+                <label>
+                    Организация:
+                    <input type="text" name="organization" id="organization">
+                </label>
+                <label>
+                    Сообщение:
+                    <textarea name="message" id="message" required></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" id="policy" required>
+                    Я согласен с политикой обработки персональных данных
+                </label>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="feedback-result" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
