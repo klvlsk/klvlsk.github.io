@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.icon-small {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-contact {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-icon img {
+    width: 36px;
+    height: 36px;
+    transition: transform 0.2s ease;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.2);
+}
+
+.fon {
+    background: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #2d2d2d;
+    color: white;
+    border: 1px solid #444;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: #3d3d3d;
+    border-color: #f14d34;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #f14d34;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #f14d34;
+}
+
+.footer-divider {
+    border-top: 1px solid #666;
+}
+
+.footer-note {
+    font-size: 12px;
+    margin-bottom: 0;
+    text-align: left;
+    margin-left: 0;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}

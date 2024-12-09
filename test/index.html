@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поддержка сайта</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="footer bg-dark text-white py-5">
+        <div class="container">
+            <!-- Верхняя часть футера -->
+            <div class="row">
+                <!-- Левый блок с текстом -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <h2 class="footer-title">Оставить заявку на поддержку сайта</h2>
+                    <p class="footer-description">
+                        Срочно нужна поддержка сайта? Ваша команда не успевает справляться самостоятельно или предыдущий подрядчик не справился с работой?
+                        Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!
+                    </p>
+
+                    <!-- Контактная информация (иконки, телефон, email) -->
+                    <div class="d-flex align-items-center mt-4">
+                        <div class="me-3">
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="Без названия11_20241207120749.png" alt="Иконка телефона" class="icon-small me-2">
+                                <p class="footer-contact mb-0"><a href="tel:+78002222673" class="text-white text-decoration-none">8 800 222-26-73</a></p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="Без названия12_20241207120953.png" alt="Иконка email" class="icon-small me-2">
+                                <p class="footer-contact mb-0"><a href="mailto:info@drupal-coder.ru" class="text-white text-decoration-line">info@drupal-coder.ru</a></p>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <!-- Правая часть: Форма -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="fon">
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Телефон" name="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="E-mail" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="Ваш комментарий" name="comment" rows="3"></textarea>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="agreeCheckbox" required>
+                                <label class="form-check-label" for="agreeCheckbox">
+                                    Отправляя заявку, я даю согласие на обработку своих персональных данных.
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-danger w-100">Свяжитесь с нами</button>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Разделительная линия -->
+            <hr class="footer-divider mt-5 mb-4">
+
+            <!-- Социальные и подвал -->
+            <div class="row">
+                <!-- Иконки соцсетей -->
+                <div class="col-lg-12 d-flex align-items-center mb-2">
+                    <a href="https://vk.com" class="footer-icon me-3">
+                        <img src="Без названия15_20241208221233.png" alt="VK" class="social-icon">
+                    </a>
+                    <a href="https://facebook.com" class="footer-icon me-3">
+                        <img src="Без названия15_20241208221256.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://youtube.com" class="footer-icon me-3">
+                        <img src="Без названия15_20241208220948.png" alt="YouTube" class="social-icon">
+                    </a>
+                    <a href="https://web.telegram.org" class="footer-icon me-3">
+                        <img src="Без названия15_20241209182251.png" alt="Telegram" class="social-icon">
+                    </a>
+                </div>
+
+                <!-- Текст под иконками -->
+                <div class="col-lg-12 mt-2">
+                    <p class="footer-note mb-1">Проект ООО "Инитлаб", Краснодар, Россия.</p>
+                    <p class="footer-note">Drupal является зарегистрированной торговой маркой Dries Buytaert.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
