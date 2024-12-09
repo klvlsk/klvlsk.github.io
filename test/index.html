@@ -39,18 +39,18 @@
                 <!-- Правая часть: Форма -->
                 <div class="col-lg-6 col-md-12">
                     <div class="fon">
-                        <form class="contact-form">
+                        <form id="feedback-form" method="POST" enctype="multipart/form-data" class="contact-form">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Ваше имя" name="name" required>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Ваше имя" required>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Телефон" name="phone" required>
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Телефон" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="E-mail" name="email" required>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" placeholder="Ваш комментарий" name="comment" rows="3"></textarea>
+                                <textarea class="form-control" name="message" id="message" placeholder="Ваш комментарий" rows="3"></textarea>
                             </div>
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" id="agreeCheckbox" required>
@@ -59,7 +59,7 @@
                                 </label>
                             </div>
                             <button type="submit" class="btn btn-danger w-100">Свяжитесь с нами</button>
-                        </form>                        
+                        </form>
                     </div>
                 </div>
             </div>
