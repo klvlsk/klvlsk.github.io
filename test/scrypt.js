@@ -38,12 +38,14 @@ form.addEventListener('submit', async (e) => {
         const response = await fetch('https://formcarry.com/s/g7ga5yAahTs', {
             method: 'POST',
             body: formData,
+            headers: {
+                'Accept': 'application/json',
+            },
         });
 
-            resultDiv.textContent = 'Форма успешно отправлена!';
-            clearFormData();
-            form.reset();
-        
+        resultDiv.textContent = 'Форма успешно отправлена!';
+        clearFormData();
+        form.reset();
     } catch (error) {
         resultDiv.textContent = 'Ошибка сети. Попробуйте позже.';
     }
